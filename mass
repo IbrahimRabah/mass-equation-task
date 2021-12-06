@@ -1,0 +1,19 @@
+import pyopenms
+from pyopenms import *
+import pyopenms as SQ
+
+summ=0
+
+seq = SQ.AASequence.fromString("VAKA")
+
+for aa in seq:
+
+    summ+=aa.getMonoWeight()
+
+summ
+---------------------------------------------------------------------
+seq=SQ.AASequence.fromString("VAKA")
+
+total=seq.getMonoWeight()
+
+total
